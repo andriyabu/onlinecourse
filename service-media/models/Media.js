@@ -1,5 +1,5 @@
-const { DataTypes } = require("sequelize/types");
-const { sequelize } = require(".");
+
+const { sequelize, DataTypes } = require('sequelize');
 
 module.exports = (sequelize,DataTypes) => {
 
@@ -15,7 +15,7 @@ module.exports = (sequelize,DataTypes) => {
             allowNull: false
         },
         createdAt: {
-            field: 'creted_at',
+            field: 'created_at',
             type: DataTypes.DATE,
             allowNull: false
         },
